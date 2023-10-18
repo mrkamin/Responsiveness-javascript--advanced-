@@ -11,6 +11,8 @@
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
+  --color-purple: #6111a5;
+  --color-dark: #cdcbcf;
   --transition: all 400ms ease;
   --container-width-lg: 90%;
   --container-width-md: 86%;
@@ -27,3 +29,49 @@
 body {
   font-family: var(--ff);
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.left-side {
+  background-color: var(--color-purple);
+}
+
+.left-side-item-one-item {
+  top: 25vh;
+  left: 2%;
+  z-index: 100;
+}
+.circle-container {
+ top: 9vh;
+  left: 14%;
+}
+
+.circle {
+  height: 22rem;
+  width: 22rem;
+  background: var(--color-purple);
+}
+
+.left-side-item-two-item {
+  top: 40vh;
+  left: 8%;
+}
+
+.left-side-item-three-item {
+top: 80vh;
+left: 8%;
+width: 80%;
+}
+
+.right-side {
+  background-color: var(--color-dark);
+  height: 100vh;
+}
+
+.right-side img {
+  height: 550px;
+}
+
