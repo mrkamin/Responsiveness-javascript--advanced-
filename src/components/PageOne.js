@@ -6,15 +6,13 @@ import IMG3 from './assets/world-communication-awards-for-best-digital-experienc
 
 const PageOne = () => (
   <div className="grid section-container text-white">
-    <div className="left-side">
+    <div className="left-side custom-clip-path ">
       <div className="left-side-item-one position-relative text-end">
         <div className="position-absolute w-100 left-side-item-one-item">
           <h1 className="fw-bold">25M+ Dwonloads</h1>
           <p>on appstore & google playstore</p>
         </div>
-        <div className="position-absolute circle-container w-100 d-flex justify-content-end">
-          <p className="rounded-circle circle" />
-        </div>
+
       </div>
       <div className="left-side-item-two position-relative">
         <div className="position-absolute left-side-item-two-item d-flex flex-column gap-3">
