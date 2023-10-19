@@ -15,14 +15,14 @@ const PageOne = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.image-container', { duration: 2, y: '-150%', ease: 'bounce' });
-      gsap.from(rightSideImage.current, { duration: 2, y: '-150%', ease: 'bounce' });
-      gsap.from('left-side-item-one-item', { duration: 2, x: '-100%', ease: 'bounce' });
-      gsap.from(leftSideItemOneItem.current, { duration: 2, x: '-100%', ease: 'bounce' });
-      gsap.from('left-side-item-two-item', { duration: 2, y: '50%', ease: 'bounce' });
-      gsap.from(leftSideItemTwoItem.current, { duration: 2, y: '50%', ease: 'bounce' });
-      gsap.from('vew-case-study', { duration: 2, x: '-40%', ease: 'bounce' });
-      gsap.from(vewCaseStudy.current, { duration: 2, x: '-40%', ease: 'bounce' });
+      gsap.from('.image-container', { duration: 2, y: '-100%', ease: 'bounce' });
+      gsap.from(rightSideImage.current, { duration: 2, y: '-100%', ease: 'bounce' });
+      gsap.from('left-side-item-one-item', { duration: 2, x: '-80%', ease: 'bounce' });
+      gsap.from(leftSideItemOneItem.current, { duration: 2, x: '-80%', ease: 'bounce' });
+      gsap.from('left-side-item-two-item', { duration: 2, y: '40%', ease: 'bounce' });
+      gsap.from(leftSideItemTwoItem.current, { duration: 2, y: '40%', ease: 'bounce' });
+      gsap.from('vew-case-study', { duration: 2, x: '-30%', ease: 'bounce' });
+      gsap.from(vewCaseStudy.current, { duration: 2, x: '-30%', ease: 'bounce' });
       gsap.from('skip', { duration: 2, x: '40%', ease: 'bounce' });
       gsap.from(skip.current, { duration: 2, x: '40%', ease: 'bounce' });
     }, pageone);
