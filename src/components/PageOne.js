@@ -37,6 +37,7 @@ const PageOne = () => {
             <h1 className="fw-bold">25M+ Dwonloads</h1>
             <p>on appstore & google playstore</p>
           </div>
+          <div className="scroll-containter" />
           <div className="custom-shape-divider-top position-absolute ">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 975 1000" preserveAspectRatio="none">
               <path d="M0 0 L0 1000 L750 1000 L750 400 A50 55 10 0 0 750 120 L750 0 Z" fill="#6111a5" />

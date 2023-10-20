@@ -36,7 +36,7 @@ body {
 }
 
 .left-side-item-one-item {
-  top: 22vh;
+  top: 20vh;
   left: 2%;
   z-index: 110;
 }
@@ -81,3 +81,206 @@ body {
 .right-side img {
   height: 80vh;
 }
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+.path-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+  background-color: #282d35;
+
+  /* &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 220px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+  } */
+}
+
+
+/* .path-slider__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+svg {
+  position: absolute;
+  top: 10;
+  left: 10;
+  width: 100%;
+  height: 100%;
+}
+
+.path-slider__path {
+  stroke-width: 10px;
+  stroke: rgba(0, 0, 0, 0.5);
+  fill: none;
+}
+
+.path-slider__item {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  cursor: pointer;
+  z-index: 1;
+} */
+
+.item__circle-one {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 15vh;
+  left: 37%;
+}
+.item__circle-two {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 13vh;
+  left: 40%;
+}
+.item__circle-three {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 17vh;
+  left: 43%;
+}
+
+.item__circle-four {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 24vh;
+  left: 44%;
+}
+
+.item__circle-five {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 30vh;
+  left: 43%;
+}
+.item__circle-six {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 33vh;
+  left: 40%;
+}
+
+.item__circle-seven {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border-radius: 100%;
+  transform: scale(0.5);
+  transition: 0.5s transform;
+  border: 20px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 32vh;
+  left: 37%;
+}
+
+/* .path-slider__current-item {
+  z-index: 2;
+
+  .item__circle {
+    transform: scale(1);
+  }
+} */
+
+
+
+.path-slider__item--1 .item__circle-one {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img1.jpg");
+}
+
+.path-slider__item--2 .item__circle-two {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
+}
+
+.path-slider__item--3 .item__circle-three {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img3.jpg");
+}
+
+.path-slider__item--4 .item__circle-four {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
+}
+
+.path-slider__item--5 .item__circle-five {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img5.jpg");
+}
+.path-slider__item--6 .item__circle-six {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
+}
+.path-slider__item--7 .item__circle-seven {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
+}
+
+
+
