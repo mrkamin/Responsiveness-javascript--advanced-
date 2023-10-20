@@ -72,11 +72,13 @@ const PageTwo = () => {
       <div className="left-side custom-clip-path pa ">
         <div className="left-side-item-one position-relative text-end">
           <div
-            className="position-absolute w-100 left-side-item-one-item"
+            className="position-absolute left-side-item-one-item ux-strategy"
             ref={leftSideItemOneItem}
           >
-            <p>The Next Big</p>
-            <h1 className="fw-bold">Blockchain</h1>
+            <div className="text-start">
+              <p>The Next Big</p>
+              <h1 className="fw-bold">Blockchain</h1>
+            </div>
             <p>Revolution</p>
           </div>
           <div className="custom-shape-divider-top position-absolute ">
