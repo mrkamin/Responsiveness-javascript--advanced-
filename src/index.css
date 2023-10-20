@@ -18,6 +18,8 @@
   --container-width-md: 86%;
   --container-width-sm: 90%;
   --ff: "Poppins";
+  --page-two-left-side-color: #4926c6;
+  --page-two-right-side-color: #1c0361;
 }
 
 * {

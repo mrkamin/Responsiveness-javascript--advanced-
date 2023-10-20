@@ -1,7 +1,8 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import IMG1 from './assets/mrkamin (1).png';
-import IMG2 from './assets/mrkamin.png';
+import IMG1 from './assets/veme-blockchain-app-developed.png';
+import IMG2 from './assets/veme-app-ui-design.png';
+import { pageTwoRightSideColor, pageTwoleftSidehColor } from './Variable';
 
 const PageTwo = () => {
   const pageone = useRef();
@@ -16,22 +17,22 @@ const PageTwo = () => {
     const ctx = gsap.context(() => {
       gsap.to('.rigth-side-image-one', {
         duration: 2,
-        y: '-20%',
+        y: '20%',
         ease: 'bounce',
       });
       gsap.to(rightSideImageOne.current, {
         duration: 2,
-        y: '-20%',
+        y: '20%',
         ease: 'bounce',
       });
       gsap.to('rigth-side-image-two', {
         duration: 2,
-        y: '20%',
+        y: '-20%',
         ease: 'bounce',
       });
       gsap.to(rigthSideImageTwo.current, {
         duration: 2,
-        y: '20%',
+        y: '-20%',
         ease: 'bounce',
       });
       gsap.from('left-side-item-one-item', {
@@ -68,7 +69,7 @@ const PageTwo = () => {
 
   return (
     <div className="grid section-container text-white">
-      <div className="left-side custom-clip-path ">
+      <div className="left-side custom-clip-path pa ">
         <div className="left-side-item-one position-relative text-end">
           <div
             className="position-absolute w-100 left-side-item-one-item"
@@ -87,7 +88,7 @@ const PageTwo = () => {
             >
               <path
                 d="M0 0 L0 1000 L750 1000 L750 400 A50 55 10 0 0 750 120 L750 0 Z"
-                fill="#6111a5"
+                fill={pageTwoleftSidehColor}
               />
             </svg>
           </div>
@@ -120,7 +121,7 @@ const PageTwo = () => {
           </div>
         </div>
       </div>
-      <div className="right-side d-flex align-items-center justify-content-center">
+      <div className="right-side d-flex align-items-center justify-content-center" style={{ backgroundColor: pageTwoRightSideColor }}>
         <div className="d-flex image-container">
           <img
             src={IMG1}
