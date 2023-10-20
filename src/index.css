@@ -28,6 +28,9 @@
 
 body {
   font-family: var(--ff);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .grid {
@@ -82,16 +85,6 @@ body {
   height: 80vh;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
-}
-
-
 .path-slider {
   position: relative;
   width: 100%;
@@ -145,6 +138,7 @@ svg {
 } */
 
 .item__circle-one {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img1.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -158,7 +152,9 @@ svg {
   top: 15vh;
   left: 37%;
 }
+
 .item__circle-two {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -172,7 +168,9 @@ svg {
   top: 13vh;
   left: 40%;
 }
+
 .item__circle-three {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img3.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -188,6 +186,7 @@ svg {
 }
 
 .item__circle-four {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -203,6 +202,7 @@ svg {
 }
 
 .item__circle-five {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img5.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -216,7 +216,9 @@ svg {
   top: 30vh;
   left: 43%;
 }
+
 .item__circle-six {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -232,6 +234,7 @@ svg {
 }
 
 .item__circle-seven {
+  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -246,6 +249,11 @@ svg {
   left: 37%;
 }
 
+.active {
+  border: 30px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
 /* .path-slider__current-item {
   z-index: 2;
 
@@ -253,34 +261,3 @@ svg {
     transform: scale(1);
   }
 } */
-
-
-
-.path-slider__item--1 .item__circle-one {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img1.jpg");
-}
-
-.path-slider__item--2 .item__circle-two {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
-}
-
-.path-slider__item--3 .item__circle-three {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img3.jpg");
-}
-
-.path-slider__item--4 .item__circle-four {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
-}
-
-.path-slider__item--5 .item__circle-five {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img5.jpg");
-}
-.path-slider__item--6 .item__circle-six {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
-}
-.path-slider__item--7 .item__circle-seven {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
-}
-
-
-
