@@ -14,7 +14,7 @@ import PageSeven from './components/PageSeven';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App position-relative">
         <Navbar />
         <Routes>
           <Route path="/" element={<PageOne />} />

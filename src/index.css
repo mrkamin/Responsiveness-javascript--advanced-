@@ -94,7 +94,6 @@ body {
   width: 100%;
   height: 100%;
   z-index: 110;
-  background-color: #282d35;
 }
 
 .item__circle-one {
@@ -240,4 +239,76 @@ body {
 .ux-strategy{
   left: 55%;
   top: 15vh !important;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .path-slider {
+    position: fixed !important;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+  }
+
+  .path-slider a div {
+    position: static;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .left-side {
+    position: absolute !important;
+    top: 50vh !important;
+    z-index: 1000;
+    background: var(--color-purple);
+    height: 50vh;
+    width: 100%;
+  }
+.left-side-item-one {
+  display: none !important;
+}
+  .custom-shape-divider-top {
+    display: none !important;
+  }
+
+  .left-side-item-two {
+    background-color: #4db5ff;
+    position: absolute !important;
+    top: -40vh;
+    left: 5%;
+  }
+
+  .left-side-item-two-item img {
+    border: 2px solid var(--color-purple);
+    border-radius: 1rem;
+    background-color: white;
+  }
+
+  .left-side-item-three {
+    position: absolute !important;
+    top: -60vh;
+    width: 100%;
+  }
+
+  .skip {
+    display: none;
+  }
+
+  .right-side {
+    position: absolute !important;
+    top: 0;
+    width: 100%;;
+    height: 50vh;
+  }
+
+  .right-side img {
+    height: 50vh !important;
+    margin-top: 20vh;
+  }
+  
 }
