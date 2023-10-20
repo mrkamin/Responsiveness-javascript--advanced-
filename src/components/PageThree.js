@@ -129,9 +129,9 @@ const Pagethree = () => {
             </svg>
           </div>
         </div>
-        <div className="left-side-item-two position-relative">
+        <div className="left-side-item-two position-relative w-100">
           <div
-            className="position-absolute left-side-item-two-item d-flex flex-column gap-3"
+            className="position-absolute left-side-item-two-item d-flex flex-column gap-3 pagetwo-itemtwo"
             ref={leftSideItemTwoItem}
           >
             <h1 className="fw-bold">ABC 456</h1>
