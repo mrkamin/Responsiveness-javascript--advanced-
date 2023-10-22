@@ -20,8 +20,16 @@
   --ff: "Poppins";
   --page-two-left-side-color: #4926c6;
   --page-two-right-side-color: #1c0361;
-  --page-three-left-side-color: #16263b;
-  --page-three-right-side-color: #0d131b;
+  --page-three-left-side-color:#0d1039 ;
+  --page-three-right-side-color: #131549;
+  --page-four-left-side-color:#16263b ;
+  --page-four-right-side-color: #0d131b;
+  --page-five-left-side-color: #1059ce;
+  --page-five-right-side-color: #22c1da;
+  --page-six-right-side-color: #012379;
+  --page-seven-left-side-color: #01b769;
+  --page-seven-right-side-color: #007946;
+
 }
 
 * {
@@ -32,9 +40,6 @@
 
 body {
   font-family: var(--ff);
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
 }
 
 .grid {
@@ -42,13 +47,38 @@ body {
   grid-template-columns: 40% 60%;
 }
 
-.left-side-item-one-item {
+.mobileview {
+  display: none;
+}
+
+.desktopview {
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  font-size: 50px;
+  width: 5% !important;
+  height: 5vh !important;
+  top: 10vh !important;
+  background-color: white !important;
+}
+
+@media screen and (max-width: 1224px) {
+  .desktopview {
+    display: none;
+  }
+  .mobileview {
+    display: block;
+  }
+}
+
+/* .left-side-item-one-item {
   top: 20vh;
   left: 2%;
   z-index: 110;
-}
+} */
 
-.custom-shape-divider-top {
+/* .custom-shape-divider-top {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,8 +93,8 @@ body {
   display: block;
   width: calc(100% + 1.3px);
   height: 100vh;
-}
-
+} */
+/* 
 .left-side-item-two-item {
   top: 38vh;
   left: 8%;
@@ -87,17 +117,16 @@ body {
 
 .right-side img {
   height: 80vh;
-}
+} */
 
 .path-slider {
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 110;
+  z-index: 1100;
 }
 
 .item__circle-one {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img1.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -105,15 +134,14 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 15vh;
-  left: 37%;
+  top: 13.4vh;
+  left: 31%;
 }
 
 .item__circle-two {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -121,15 +149,14 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 13vh;
-  left: 40%;
+  top: 8.8vh;
+  left: 36.4%;
 }
 
 .item__circle-three {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img3.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -137,15 +164,14 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 17vh;
-  left: 43%;
+  top: 13.845vh;
+  left: 41.82435%;
 }
 
 .item__circle-four {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -153,15 +179,14 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 24vh;
-  left: 44%;
+  top: 24.5vh;
+  left: 43.9%;
 }
 
 .item__circle-five {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img5.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -169,15 +194,14 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0.034);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 30vh;
-  left: 43%;
+  top: 34.3vh;
+  left: 41.95%;
 }
 
 .item__circle-six {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img2.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -185,15 +209,14 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 33vh;
-  left: 40%;
+  top: 39.7vh;
+  left: 36.54%;
 }
 
 .item__circle-seven {
-  background-image: url("https://cdn.rawgit.com/lmgonzalves/path-slider/aafa43d3/images/img4.jpg");
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -201,11 +224,11 @@ body {
   border-radius: 100%;
   transform: scale(0.5);
   transition: 0.5s transform;
-  border: 20px solid rgba(0, 0, 0, 0.5);
+  border: 12px solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 32vh;
-  left: 37%;
+  top: 35.1vh;
+  left: 31.25%;
 }
 
 .active {
@@ -240,7 +263,7 @@ body {
   left: 55%;
   top: 15vh !important;
 }
-
+/* 
 @media screen and (max-width: 1024px) {
   .path-slider {
     position: fixed !important;
@@ -339,4 +362,4 @@ body {
     right: -40%;
     height: 30vh !important;
   }
-}
+} */

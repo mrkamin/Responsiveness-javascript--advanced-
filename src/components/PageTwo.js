@@ -2,12 +2,12 @@ import React, { useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import IMG1 from './assets/veme-blockchain-app-developed.png';
 import IMG2 from './assets/veme-app-ui-design.png';
-import { pageTwoRightSideColor, pageTwoleftSidehColor } from './Variable';
+import './css/pagetwo.css';
+import { pageTwoRightSideColor, pageTwoleftSideColor } from './Variable';
 
 const PageTwo = () => {
   const pageone = useRef();
-  const rightSideImageOne = useRef();
-  const rigthSideImageTwo = useRef();
+  const rightSideImage = useRef();
   const leftSideItemOneItem = useRef();
   const leftSideItemTwoItem = useRef();
   const vewCaseStudy = useRef();
@@ -15,24 +15,14 @@ const PageTwo = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.to('.rigth-side-image-one', {
+      gsap.from('.image-container', {
         duration: 2,
-        y: '20%',
+        y: '-100%',
         ease: 'bounce',
       });
-      gsap.to(rightSideImageOne.current, {
+      gsap.from(rightSideImage.current, {
         duration: 2,
-        y: '20%',
-        ease: 'bounce',
-      });
-      gsap.to('rigth-side-image-two', {
-        duration: 2,
-        y: '-20%',
-        ease: 'bounce',
-      });
-      gsap.to(rigthSideImageTwo.current, {
-        duration: 2,
-        y: '-20%',
+        y: '-100%',
         ease: 'bounce',
       });
       gsap.from('left-side-item-one-item', {
@@ -68,78 +58,86 @@ const PageTwo = () => {
   }, []);
 
   return (
-    <div className="grid section-container text-white">
-      <div className="left-side custom-clip-path pa ">
-        <div className="left-side-item-one position-relative text-end">
-          <div
-            className="position-absolute left-side-item-one-item ux-strategy"
-            ref={leftSideItemOneItem}
-          >
-            <div className="text-start">
-              <p>The Next Big</p>
-              <h1 className="fw-bold">Blockchain</h1>
-            </div>
-            <p>Revolution</p>
-          </div>
-          <div className="custom-shape-divider-top position-absolute ">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 975 1000"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0 0 L0 1000 L750 1000 L750 400 A50 55 10 0 0 750 120 L750 0 Z"
-                fill={pageTwoleftSidehColor}
-              />
-            </svg>
-          </div>
-        </div>
-        <div className="left-side-item-two position-relative w-100">
-          <div
-            className="position-absolute left-side-item-two-item d-flex flex-column gap-3 pagetwo-itemtwo"
-            ref={leftSideItemTwoItem}
-          >
-            <h1 className="fw-bold">ABC 234</h1>
-            <p>
-              We are the best Web Development
-              <br />
-              {' '}
-              country in the world
-            </p>
-          </div>
-        </div>
-        <div className="left-side-item-three position-relative">
-          <div className="left-side-item-three-item position-absolute d-flex justify-content-between align-items-center">
+    <>
+      <div className="sect-two-container grid position-relative">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 241"
+          preserveAspectRatio="none"
+          className="sect-two-svg position-absolute"
+        >
+          <circle
+            cx="360"
+            cy="120"
+            r="100"
+            fill={pageTwoleftSideColor}
+            className="sect-two-svg-circle"
+          />
+        </svg>
+        <div
+          className="sect-two-left-side text-white position-relative"
+          style={{ background: pageTwoleftSideColor }}
+        >
+          <div className="sect-two-left-side-item-one position-absolute">
             <div
-              className=" d-flex align-items-center gap-2 vew-case-study"
-              ref={vewCaseStudy}
+              className="sect-two-left-side-item-one-item"
+              ref={leftSideItemOneItem}
             >
-              <h5>Comming Soon </h5>
+              <div className="">
+                <h5>Revolution</h5>
+                <div className="text-end">
+                  <h1 className="fw-bold">Blockchain</h1>
+                  <h5>Revolution</h5>
+                </div>
+              </div>
             </div>
-            <h5 className="skip" ref={skip}>
-              SKIP
-            </h5>
+          </div>
+          <div className="sect-two-left-side-item-two position-absolute w-100">
+            <div
+              className="sect-two-left-side-item-two-item d-flex flex-column gap-3"
+              ref={leftSideItemTwoItem}
+            >
+              <h1 className="fw-bold">ABC 1</h1>
+              <p>
+                This is sample text for ABC 1
+              </p>
+            </div>
+          </div>
+          <div className="sect-two-left-side-item-three position-absolute w-100">
+            <div className="sect-two-left-side-item-three-item  d-flex justify-content-between align-items-center w-75">
+              <div
+                className="sect-two-left-side-item-three-item-one d-flex align-items-center gap-2"
+                ref={vewCaseStudy}
+              >
+                <h5>Vew Case Study - </h5>
+                <button type="button" className="btn sect-two-com-soon-btn text-white">Comming Soon</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sect-two-right-side w-100 align-items-center justify-content-center position-relative"
+          style={{ backgroundColor: pageTwoRightSideColor }}
+        >
+          <div
+            className="sect-two-right-side-image-container d-flex align-items-center justify-content-center"
+            ref={rightSideImage}
+          >
+            <img
+              src={IMG1}
+              alt="pageoneimg"
+              className="sect-two-rigth-side-image1 position-absolute"
+            />
+            <img
+              src={IMG2}
+              alt="pagetwoimg"
+              className="sect-two-rigth-side-image2 position-absolute"
+            />
           </div>
         </div>
       </div>
-      <div className="right-side d-flex align-items-center justify-content-center" style={{ backgroundColor: pageTwoRightSideColor }}>
-        <div className="d-flex image-container">
-          <img
-            src={IMG1}
-            alt="pageoneimg"
-            className="rigth-side-image-one"
-            ref={rightSideImageOne}
-          />
-          <img
-            src={IMG2}
-            alt="pagetwoimg"
-            className="rigth-side-image-two"
-            ref={rigthSideImageTwo}
-          />
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 
