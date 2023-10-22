@@ -20,16 +20,15 @@
   --ff: "Poppins";
   --page-two-left-side-color: #4926c6;
   --page-two-right-side-color: #1c0361;
-  --page-three-left-side-color:#0d1039 ;
+  --page-three-left-side-color: #0d1039;
   --page-three-right-side-color: #131549;
-  --page-four-left-side-color:#16263b ;
+  --page-four-left-side-color: #16263b;
   --page-four-right-side-color: #0d131b;
   --page-five-left-side-color: #1059ce;
   --page-five-right-side-color: #22c1da;
   --page-six-right-side-color: #012379;
   --page-seven-left-side-color: #01b769;
   --page-seven-right-side-color: #007946;
-
 }
 
 * {
@@ -67,6 +66,7 @@ body {
   .desktopview {
     display: none;
   }
+
   .mobileview {
     display: block;
   }
@@ -94,7 +94,8 @@ body {
   width: calc(100% + 1.3px);
   height: 100vh;
 } */
-/* 
+
+/*
 .left-side-item-two-item {
   top: 38vh;
   left: 8%;
@@ -263,7 +264,8 @@ body {
   left: 55%;
   top: 15vh !important;
 }
-/* 
+
+/*
 @media screen and (max-width: 1024px) {
   .path-slider {
     position: fixed !important;

@@ -37,6 +37,7 @@
   top: 15vh;
   left: 10%;
 }
+
 .sect-three-rigth-side-image2 {
   top: -10vh;
   left: 50%;
@@ -60,6 +61,7 @@
   .sect-three-left-side-item-one {
     display: none;
   }
+
   .sect-three-left-side-item-two {
     top: 30vh;
   }
@@ -85,6 +87,7 @@
     top: 10vh;
     height: 50vh;
   }
+
   .sect-three-rigth-side-image1 {
     width: 20em;
     position: static !important;
@@ -99,9 +102,11 @@
   .grid {
     grid-template-columns: 1fr;
   }
+
   .sect-three-svg {
     display: none;
   }
+
   .sect-three-left-side {
     height: 50vh;
     position: absolute;
@@ -111,6 +116,7 @@
   .sect-three-left-side-item-one {
     display: none;
   }
+
   .sect-three-left-side-item-two {
     top: 5vh;
   }
@@ -156,6 +162,7 @@
     width: 17em !important;
     left: 5%;
   }
+
   .sect-three-rigth-side-image2 {
     top: -8vh;
     left: 50%;

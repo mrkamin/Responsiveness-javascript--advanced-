@@ -1,163 +1,166 @@
 .sect-six-container {
-    height: 100vh;
+  height: 100vh;
+}
+
+.sect-six-left-side {
+  z-index: 100;
+}
+
+.sect-six-left-side-item-one {
+  top: 20vh;
+  left: 64%;
+  z-index: 100;
+}
+
+.sect-six-left-side-item-two {
+  top: 45vh;
+  left: 5%;
+}
+
+.sect-six-left-side-item-three {
+  top: 70vh;
+  left: 5%;
+}
+
+.sect-six-svg {
+  top: 1vh;
+  height: 50vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.sect-six-right-side-image-container {
+  background-image: url('../assets/interior.jpg');
+  background-size: cover; /* You can adjust background size properties as needed */
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
-  
-  .sect-six-left-side {
-    z-index: 100;
-  }
-  
-  .sect-six-left-side-item-one {
-    top: 20vh;
-    left: 64%;
-    z-index: 100;
-  }
-  
-  .sect-six-left-side-item-two {
-    top: 45vh;
-    left: 5%;
-  }
-  
-  .sect-six-left-side-item-three {
-    top: 70vh;
-    left: 5%;
-  }
-  
+
   .sect-six-svg {
-    top: 1vh;
-    height: 50vh;
-    width: 100%;
-    z-index: 1;
+    display: none;
   }
-  
+
+  .sect-six-left-side {
+    height: 50vh;
+    position: absolute;
+    top: 50vh;
+  }
+
+  .sect-six-left-side-item-one {
+    display: none;
+  }
+
+  .sect-six-left-side-item-two {
+    top: 30vh;
+  }
+
+  .sect-six-left-side-item-two-item-image {
+    background: var(--color-white);
+    border: 3px solid var(--color-purple);
+    border-radius: 1rem;
+  }
+
+  .sect-six-right-side {
+    position: absolute !important;
+    height: 50vh;
+    align-items: end;
+  }
+
   .sect-six-right-side-image-container {
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    height: 50vh;
+  }
+
+  .sect-six-rigth-side-image1 {
+    top: -28vh !important;
+    left: 55% !important;
+  }
+
+  .sect-six-rigth-side-image2 {
+    top: 18vh !important;
+    left: 55% !important;
+  }
+
+  .sect-six-rigth-side-image3 {
+    top: -20vh;
+    left: 0;
+  }
+
+  .sect-six-rigth-side-image4 {
+    display: none;
+  }
+
+  .sect-six-rigth-side-image5 {
+    top: 26vh;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sect-six-svg {
+    display: none;
+  }
+
+  .sect-six-left-side {
+    height: 50vh;
+    position: absolute;
+    top: 50vh;
+  }
+
+  .sect-six-left-side-item-one {
+    display: none;
+  }
+
+  .sect-six-left-side-item-two {
+    top: 5vh;
+  }
+
+  .sect-six-com-soon-btn {
+    background-color: var(--color-dark);
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  .sect-six-left-side-item-three {
+    top: 25vh;
+  }
+
+  .sect-six-left-side-item-two-item-image {
+    background: var(--color-white);
+    border: 3px solid var(--color-purple);
+    border-radius: 1rem;
+  }
+
+  .sect-six-right-side {
+    position: absolute !important;
+    height: 50vh;
+    align-items: end;
   }
 
   .sect-six-right-side-image-container {
     background-image: url('../assets/interior.jpg');
-    background-size: cover; /* You can adjust background size properties as needed */
-    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 10vh;
+    height: 50vh;
   }
-  
-  @media screen and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .sect-six-svg {
-      display: none;
-    }
-  
-    .sect-six-left-side {
-      height: 50vh;
-      position: absolute;
-      top: 50vh;
-    }
-  
-    .sect-six-left-side-item-one {
-      display: none;
-    }
-    .sect-six-left-side-item-two {
-      top: 30vh;
-    }
-  
-    .sect-six-left-side-item-two-item-image {
-      background: var(--color-white);
-      border: 3px solid var(--color-purple);
-      border-radius: 1rem;
-    }
-  
-    .sect-six-right-side {
-      position: absolute !important;
-      height: 50vh;
-      align-items: end;
-    }
-  
-    .sect-six-right-side-image-container {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      width: 100%;
-      top: 10vh;
-      height: 50vh;
-    }
-  
-    .sect-six-rigth-side-image1 {
-      top: -28vh !important;
-      left: 55% !important;
-    }
-    .sect-six-rigth-side-image2 {
-      top: 18vh !important;
-     left: 55% !important;
-    }
-    .sect-six-rigth-side-image3 {
-      top: -20vh;
-      left: 0;
-    }
-    .sect-six-rigth-side-image4 {
-      display: none;
-    }
-    .sect-six-rigth-side-image5 {
-      top: 26vh;
-      left: 0;
-    }
+
+  .sect-six-right-side-image-container img {
+    width: 100%;
   }
-  
-  @media screen and (max-width: 1224px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
-    .sect-six-svg {
-      display: none;
-    }
-    .sect-six-left-side {
-      height: 50vh;
-      position: absolute;
-      top: 50vh;
-    }
-  
-    .sect-six-left-side-item-one {
-      display: none;
-    }
-    .sect-six-left-side-item-two {
-      top: 5vh;
-    }
-  
-    .sect-six-com-soon-btn {
-      background-color: var(--color-dark);
-      border: none;
-      border-radius: 2rem;
-      padding: 1rem;
-    }
-  
-    .sect-six-left-side-item-three {
-      top: 25vh;
-    }
-  
-    .sect-six-left-side-item-two-item-image {
-      background: var(--color-white);
-      border: 3px solid var(--color-purple);
-      border-radius: 1rem;
-    }
-  
-    .sect-six-right-side {
-      position: absolute !important;
-      height: 50vh;
-      align-items: end;
-    }
-  
-    .sect-six-right-side-image-container {
-      background-image: url('../assets/interior.jpg');
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      top: 10vh;
-      height: 50vh;
-    }
-  
-    .sect-six-right-side-image-container img {
-      width:100%;
-    }
-  }
-  
+}
