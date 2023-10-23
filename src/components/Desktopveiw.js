@@ -1,30 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PageOne from './PageOne';
-import PageTwo from './PageTwo';
-import PageThree from './PageThree';
-import PageFour from './PageFour';
-import PageFive from './PageFive';
-import PageSix from './PageSix';
-import PageSeven from './PageSeven';
-import Svg from './Svg';
+// import Svg from './Svg';
+import ScrollEvent from './ScrollEvent';
 
 const Desktopveiw = () => (
   <>
-    <Router>
-      <div className="desktopveiw-container position-relative ">
-        <Svg />
-        <Routes>
-          <Route path="/" element={<PageOne />} />
-          <Route path="/pagetwo" element={<PageTwo />} />
-          <Route path="/pagethree" element={<PageThree />} />
-          <Route path="/pagefour" element={<PageFour />} />
-          <Route path="/pagefive" element={<PageFive />} />
-          <Route path="/pagesix" element={<PageSix />} />
-          <Route path="/pageseven" element={<PageSeven />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="desktopveiw-container position-relative ">
+      {/* <Svg /> */}
+      <ScrollEvent />
+    </div>
   </>
 );
 export default Desktopveiw;

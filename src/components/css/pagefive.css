@@ -52,8 +52,6 @@
   left: 10%;
 }
 
-
-
 @media screen and (max-width: 1224px) {
   .grid {
     grid-template-columns: 1fr;
@@ -109,7 +107,6 @@
 }
 
 @media screen and (max-width: 500px) {
-
   .sect-five-rigth-side-image1 {
     top: -28vh !important;
     left: 55% !important;

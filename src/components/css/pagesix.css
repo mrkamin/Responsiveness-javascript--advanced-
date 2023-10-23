@@ -28,7 +28,6 @@
   background-repeat: no-repeat;
 }
 
-
 @media screen and (max-width: 1224px) {
   .grid {
     grid-template-columns: 1fr;

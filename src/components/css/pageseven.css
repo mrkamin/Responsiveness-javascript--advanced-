@@ -41,7 +41,6 @@
   width: 40% !important;
 }
 
-
 @media screen and (max-width: 1224px) {
   .grid {
     grid-template-columns: 1fr;
@@ -82,19 +81,21 @@
     position: absolute !important;
     height: 50vh;
   }
+
   .sect-seven-right-side-image-container {
     height: 50vh;
   }
 }
 
 @media screen and (max-width: 500px) {
-  
   .sect-seven-left-side-item-three {
     top: 30vh;
   }
+
   .sect-seven-com-soon-btn {
     padding: 0.1rem !important;
   }
+
   .sect-seven-rigth-side-image1 {
     position: static !important;
     width: 100% !important;
