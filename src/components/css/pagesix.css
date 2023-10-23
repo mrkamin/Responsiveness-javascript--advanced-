@@ -22,13 +22,6 @@
   left: 5%;
 }
 
-.sect-six-svg {
-  top: 1vh;
-  height: 50vh;
-  width: 100%;
-  z-index: 1;
-}
-
 .sect-six-right-side-image-container {
   background-image: url('../assets/interior.jpg');
   background-size: cover; /* You can adjust background size properties as needed */

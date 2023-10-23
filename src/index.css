@@ -49,7 +49,15 @@ body {
 .svg {
   z-index: 2;
   width: 20%;
-  top: 7vh;
+  top: 6.7vh;
+  left: 27%;
+  height: 350px;
+}
+
+.pages-svg {
+  z-index: 1;
+  width: 20%;
+  top: 6.6vh;
   left: 27%;
   height: 350px;
 }
@@ -77,5 +85,9 @@ body {
     height: 5vh !important;
     top: 10vh !important;
     background-color: white !important;
+  }
+
+  .pages-svg {
+    display: none;
   }
 }

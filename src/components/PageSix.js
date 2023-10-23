@@ -69,7 +69,7 @@ const PageSix = () => {
           viewBox="0 0 414 414"
           style={{ enableBackground: 'new 0 0 414 414', backgroundColor: '' }}
           xmlSpace="preserve"
-          className="sect-one-svg position-absolute"
+          className="pages-svg position-absolute"
         >
           <circle cx="210" cy="210" r="200" fill={pageFiveLeftSideColor} />
         </svg>

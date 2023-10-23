@@ -22,13 +22,6 @@
   left: 5%;
 }
 
-.sect-seven-svg {
-  top: 1vh;
-  height: 50vh;
-  width: 100%;
-  z-index: 1;
-}
-
 .sect-seven-right-side-image-container {
   position: static !important;
 }
