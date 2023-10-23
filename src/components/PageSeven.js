@@ -16,7 +16,7 @@ const PageSeven = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('sect-seven-left-side-item-three-item-one', {
+      gsap.from('.sect-seven-right-side-image-container', {
         duration: 2,
         y: '-100%',
         ease: 'bounce',
