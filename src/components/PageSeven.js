@@ -116,7 +116,7 @@ const PageSeven = () => {
                 ref={vewCaseStudy}
               >
                 <h5>Vew Case Study </h5>
-                <button type="button" className="btn sect-two-com-soon-btn text-white">Comming Soon</button>
+                <button type="button" className="btn sect-seven-com-soon-btn text-white">Comming Soon</button>
               </div>
             </div>
           </div>
