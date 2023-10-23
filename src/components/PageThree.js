@@ -111,7 +111,7 @@ const PageThree = () => {
                 <h5>Vew Case Study - </h5>
                 <button
                   type="button"
-                  className="btn sect-three-com-soon-btn text-white"
+                  className="btn sect-three-com-soon-btn"
                 >
                   Comming Soon
                 </button>
