@@ -33,12 +33,12 @@
 }
 
 .sect-five-rigth-side-image2 {
-  top: 70vh;
+  top: 60vh;
   left: 45%;
 }
 
 .sect-five-rigth-side-image3 {
-  top: -20vh;
+  top: -15vh;
   left: 10%;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .sect-five-rigth-side-image5 {
-  top: 60vh;
+  top: 50vh;
   left: 10%;
 }
 
@@ -57,10 +57,6 @@
 @media screen and (max-width: 1224px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .sect-five-svg {
-    display: none;
   }
 
   .sect-five-left-side {
@@ -77,58 +73,32 @@
     top: 5vh;
   }
 
-  .sect-five-com-soon-btn {
-    background-color: var(--color-dark);
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem;
-  }
-
   .sect-five-left-side-item-three {
     top: 25vh;
-  }
-
-  .sect-five-left-side-item-two-item-image {
-    background: var(--color-white);
-    border: 3px solid var(--color-purple);
-    border-radius: 1rem;
   }
 
   .sect-five-right-side {
     position: absolute !important;
     height: 50vh;
-    align-items: end;
-  }
-
-  .sect-five-right-side-image-container {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    top: 10vh;
-    height: 50vh;
-  }
-
-  .sect-five-right-side-image-container img {
-    width: 15em;
   }
 
   .sect-five-rigth-side-image1 {
-    top: -10vh;
+    top: -28vh;
     left: 37%;
   }
 
   .sect-five-rigth-side-image2 {
-    top: 37vh;
+    top: 34vh;
     left: 37%;
   }
 
   .sect-five-rigth-side-image3 {
-    top: -20vh;
+    top: -35vh;
     left: 0;
   }
 
   .sect-five-rigth-side-image4 {
-    top: 20vh;
+    top: -5vh;
     left: 75%;
   }
 
@@ -139,49 +109,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sect-five-svg {
-    display: none;
-  }
-
-  .sect-five-left-side {
-    height: 50vh;
-    position: absolute;
-    top: 50vh;
-  }
-
-  .sect-five-left-side-item-one {
-    display: none;
-  }
-
-  .sect-five-left-side-item-two {
-    top: 30vh;
-  }
-
-  .sect-five-left-side-item-two-item-image {
-    background: var(--color-white);
-    border: 3px solid var(--color-purple);
-    border-radius: 1rem;
-  }
-
-  .sect-five-right-side {
-    position: absolute !important;
-    height: 50vh;
-    align-items: end;
-  }
-
-  .sect-five-right-side-image-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    top: 10vh;
-    height: 50vh;
-  }
 
   .sect-five-rigth-side-image1 {
     top: -28vh !important;
