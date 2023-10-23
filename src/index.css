@@ -70,6 +70,10 @@ body {
   display: block;
 }
 
+.dots-nav {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1224px) {
   .desktopview {
     display: none;
