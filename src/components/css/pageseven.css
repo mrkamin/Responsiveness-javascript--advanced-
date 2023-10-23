@@ -41,70 +41,10 @@
   width: 40% !important;
 }
 
-@media screen and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .sect-seven-svg {
-    display: none;
-  }
-
-  .sect-seven-left-side {
-    height: 50vh;
-    position: absolute;
-    top: 50vh;
-  }
-
-  .sect-seven-left-side-item-one {
-    display: none;
-  }
-
-  .sect-seven-left-side-item-two {
-    top: -3vh;
-  }
-
-  .sect-seven-left-side-item-three {
-    top: 43vh;
-  }
-
-  .sect-seven-left-side-item-two-item-image {
-    background: var(--color-white);
-    border-radius: 1rem;
-  }
-
-  .sect-seven-right-side {
-    position: absolute !important;
-    height: 50vh;
-    align-items: end;
-  }
-
-  .sect-seven-right-side-image-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    top: 10vh;
-    height: 50vh;
-  }
-
-  .sect-seven-rigth-side-image1 {
-    width: 20em;
-  }
-
-  .sect-seven-rigth-side-image2 {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 1224px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .sect-seven-svg {
-    display: none;
   }
 
   .sect-seven-left-side {
@@ -141,27 +81,47 @@
   .sect-seven-right-side {
     position: absolute !important;
     height: 50vh;
-    align-items: end;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 
-  .sect-seven-right-side-image-container {
-    align-items: center;
-    justify-content: center;
+  .sect-seven-left-side {
+    height: 50vh;
     position: absolute;
-    width: 100%;
-    top: 10vh;
+    top: 50vh;
+  }
+
+  .sect-seven-left-side-item-one {
+    display: none;
+  }
+
+  .sect-seven-left-side-item-two {
+    top: -3vh;
+  }
+
+  .sect-seven-left-side-item-three {
+    top: 43vh;
+  }
+
+  .sect-seven-left-side-item-two-item-image {
+    background: var(--color-white);
+    border-radius: 1rem;
+  }
+
+  .sect-seven-right-side {
+    position: absolute !important;
     height: 50vh;
   }
 
   .sect-seven-rigth-side-image1 {
-    position: static;
+    width: 20em;
   }
 
   .sect-seven-rigth-side-image2 {
-    position: static;
-  }
-
-  .sect-seven-right-side-image-container img {
-    width: 15em;
+    display: none;
   }
 }
