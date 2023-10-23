@@ -2,12 +2,8 @@
   height: 100vh;
 }
 
-.sect-one-left-side {
-  z-index: 100;
-}
-
-.sect-one-left-side-item-one {
-  top: 20vh;
+.sect-one-left-side-item-one-item {
+  top: 180px;
   left: 2%;
   z-index: 100;
 }
@@ -23,19 +19,11 @@
 }
 
 .sect-one-svg {
-  top: 1vh;
-  height: 50vh;
-  width: 100%;
   z-index: 1;
-}
-
-.sect-one-svg-img {
-  position: absolute;
-  z-index: 1000;
-  width: 18%;
-  top: 7vh;
-  left: 28%;
-  background: none;
+  width: 20%;
+  top: 6.6vh;
+  left: 27%;
+  height: 350px;
 }
 
 .sect-one-right-side-image-container {

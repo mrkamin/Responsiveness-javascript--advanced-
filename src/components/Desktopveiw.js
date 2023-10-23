@@ -7,15 +7,13 @@ import PageFour from './PageFour';
 import PageFive from './PageFive';
 import PageSix from './PageSix';
 import PageSeven from './PageSeven';
-import Navbar from './Navbar';
 import Svg from './Svg';
 
 const Desktopveiw = () => (
   <>
     <Router>
-      <div className="desktopveiw-container">
+      <div className="desktopveiw-container position-relative ">
         <Svg />
-        <Navbar />
         <Routes>
           <Route path="/" element={<PageOne />} />
           <Route path="/pagetwo" element={<PageTwo />} />

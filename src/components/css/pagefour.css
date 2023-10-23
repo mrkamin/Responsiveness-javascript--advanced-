@@ -3,12 +3,12 @@
 }
 
 .sect-four-left-side {
-  z-index: 100;
+  z-index: 1;
 }
 
 .sect-four-left-side-item-one {
   top: 20vh;
-  left: 68%;
+  left: 65%;
   z-index: 100;
 }
 

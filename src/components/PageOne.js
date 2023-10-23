@@ -63,25 +63,34 @@ const PageOne = () => {
     <>
       <div className="sect-one-container grid position-relative">
         <svg
-          data-name="Layer 1"
+          version="1.1"
+          id="transring"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 241"
-          preserveAspectRatio="none"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 414 414"
+          style={{ enableBackground: 'new 0 0 414 414', backgroundColor: '' }}
+          xmlSpace="preserve"
           className="sect-one-svg position-absolute"
         >
-          <circle cx="360" cy="120" r="100" fill={pageOneleftSideColor} />
+          <circle cx="210" cy="210" r="200" fill={pageOneleftSideColor} />
         </svg>
         <div
           className="sect-one-left-side text-white position-relative"
           style={{ background: pageOneleftSideColor }}
         >
-          <div className="sect-one-left-side-item-one position-absolute text-end w-100">
+          <div className="sect-one-left-side-item-one">
             <div
-              className="sect-one-left-side-item-one-item"
+              className="sect-one-left-side-item-one-item position-absolute w-100"
               ref={leftSideItemOneItem}
             >
-              <h1 className="fw-bold">25M+ Dwonloads</h1>
-              <p>on appstore & google playstore</p>
+              <div>
+                <div className="text-end position-absolute w-100">
+                  <h1 className="fw-bold">25M+ Dwonloads</h1>
+                  <h5>on appstore & google playstore</h5>
+                </div>
+              </div>
             </div>
           </div>
           <div className="sect-one-left-side-item-two position-absolute w-100">

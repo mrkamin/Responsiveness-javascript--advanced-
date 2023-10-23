@@ -61,19 +61,18 @@ const PageTwo = () => {
     <>
       <div className="sect-two-container grid position-relative">
         <svg
-          data-name="Layer 1"
+          version="1.1"
+          id="transring"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 241"
-          preserveAspectRatio="none"
-          className="sect-two-svg position-absolute"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 414 414"
+          style={{ enableBackground: 'new 0 0 414 414', backgroundColor: '' }}
+          xmlSpace="preserve"
+          className="sect-one-svg position-absolute"
         >
-          <circle
-            cx="360"
-            cy="120"
-            r="100"
-            fill={pageTwoleftSideColor}
-            className="sect-two-svg-circle"
-          />
+          <circle cx="210" cy="210" r="200" fill={pageTwoleftSideColor} />
         </svg>
         <div
           className="sect-two-left-side text-white position-relative"

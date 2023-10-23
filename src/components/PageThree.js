@@ -62,19 +62,18 @@ const PageThree = () => {
     <>
       <div className="sect-three-container grid position-relative">
         <svg
-          data-name="Layer 1"
+          version="1.1"
+          id="transring"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 241"
-          preserveAspectRatio="none"
-          className="sect-three-svg position-absolute"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 414 414"
+          style={{ enableBackground: 'new 0 0 414 414', backgroundColor: '' }}
+          xmlSpace="preserve"
+          className="sect-one-svg position-absolute"
         >
-          <circle
-            cx="360"
-            cy="120"
-            r="100"
-            fill={pageThreeLeftSideColor}
-            className="sect-three-svg-circle"
-          />
+          <circle cx="210" cy="210" r="200" fill={pageThreeLeftSideColor} />
         </svg>
         <div
           className="sect-three-left-side text-white position-relative"

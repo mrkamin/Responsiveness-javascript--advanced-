@@ -4,7 +4,7 @@ import Desktopveiw from './components/Desktopveiw';
 
 function App() {
   return (
-    <div className="App d-flex flex-column">
+    <div className="App">
       <div className="mobileview">
         <MobileView />
       </div>
