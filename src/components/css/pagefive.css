@@ -52,75 +52,7 @@
   left: 10%;
 }
 
-@media screen and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 
-  .sect-five-svg {
-    display: none;
-  }
-
-  .sect-five-left-side {
-    height: 50vh;
-    position: absolute;
-    top: 50vh;
-  }
-
-  .sect-five-left-side-item-one {
-    display: none;
-  }
-
-  .sect-five-left-side-item-two {
-    top: 30vh;
-  }
-
-  .sect-five-left-side-item-two-item-image {
-    background: var(--color-white);
-    border: 3px solid var(--color-purple);
-    border-radius: 1rem;
-  }
-
-  .sect-five-right-side {
-    position: absolute !important;
-    height: 50vh;
-    align-items: end;
-  }
-
-  .sect-five-right-side-image-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    top: 10vh;
-    height: 50vh;
-  }
-
-  .sect-five-rigth-side-image1 {
-    top: -28vh !important;
-    left: 55% !important;
-  }
-
-  .sect-five-rigth-side-image2 {
-    top: 18vh !important;
-    left: 55% !important;
-  }
-
-  .sect-five-rigth-side-image3 {
-    top: -20vh;
-    left: 0;
-  }
-
-  .sect-five-rigth-side-image4 {
-    display: none;
-  }
-
-  .sect-five-rigth-side-image5 {
-    top: 26vh;
-    left: 0;
-  }
-}
 
 @media screen and (max-width: 1224px) {
   .grid {
@@ -198,6 +130,76 @@
   .sect-five-rigth-side-image4 {
     top: 20vh;
     left: 75%;
+  }
+
+  .sect-five-rigth-side-image5 {
+    top: 26vh;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sect-five-svg {
+    display: none;
+  }
+
+  .sect-five-left-side {
+    height: 50vh;
+    position: absolute;
+    top: 50vh;
+  }
+
+  .sect-five-left-side-item-one {
+    display: none;
+  }
+
+  .sect-five-left-side-item-two {
+    top: 30vh;
+  }
+
+  .sect-five-left-side-item-two-item-image {
+    background: var(--color-white);
+    border: 3px solid var(--color-purple);
+    border-radius: 1rem;
+  }
+
+  .sect-five-right-side {
+    position: absolute !important;
+    height: 50vh;
+    align-items: end;
+  }
+
+  .sect-five-right-side-image-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    height: 50vh;
+  }
+
+  .sect-five-rigth-side-image1 {
+    top: -28vh !important;
+    left: 55% !important;
+  }
+
+  .sect-five-rigth-side-image2 {
+    top: 18vh !important;
+    left: 55% !important;
+  }
+
+  .sect-five-rigth-side-image3 {
+    top: -20vh;
+    left: 0;
+  }
+
+  .sect-five-rigth-side-image4 {
+    display: none;
   }
 
   .sect-five-rigth-side-image5 {
