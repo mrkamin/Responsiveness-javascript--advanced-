@@ -24,6 +24,7 @@
 
 .sect-five-right-side-image-container {
   height: 100vh;
+  overflow: hidden;
 }
 
 .sect-five-rigth-side-image1 {
@@ -38,17 +39,17 @@
 
 .sect-five-rigth-side-image3 {
   top: -20vh;
-  left: 20%;
+  left: 10%;
 }
 
 .sect-five-rigth-side-image4 {
   top: 20vh;
-  left: 70%;
+  left: 80%;
 }
 
 .sect-five-rigth-side-image5 {
   top: 60vh;
-  left: 20%;
+  left: 10%;
 }
 
 @media screen and (max-width: 500px) {
