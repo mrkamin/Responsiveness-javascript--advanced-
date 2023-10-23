@@ -31,6 +31,7 @@
     height: 50vh;
     position: absolute;
     top: 50vh;
+    z-index: 1;
   }
 
   .sect-one-left-side-item-one {
@@ -42,7 +43,7 @@
   }
 
   .sect-one-left-side-item-three {
-    top: 43vh;
+    top: 38vh;
   }
 
   .sect-one-left-side-item-two-item-image {
@@ -92,10 +93,6 @@
 
   .sect-one-left-side-item-two {
     top: -3vh;
-  }
-
-  .sect-one-left-side-item-three {
-    top: 43vh;
   }
 
   .sect-one-left-side-item-two-item-image {
